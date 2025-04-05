@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>freeCodeCamp project - Wellness Survey</title>
+</head>
+
+  <body>
+
+    <h1 id="title">Wellness Survey</h1> 
+    <p id="description">Help us understand how people feel in their daily lives</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div class="flex-group vertical-group">
+      <div>
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" name="" required placeholder="Enter your name"/>
+      </div>
+
+      <div>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email"/>
+      </div>
+
+      <div>
+      <label id="number-label" for="age">Age</label>
+      <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter your age" />
+      </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>How many hours do you sleep during night ?</legend>
+      <div class="flex-group">
+        <div>
+         <label for="sleep"></label>
+          <select id="dropdown" name="sleep" required>
+            <option value="under5">Under 5 hours</option>
+            <option value="5to6">5-6 hours</option>
+            <option value="7to8">7-8 hours</option>
+            <option value="over8">Over 8 hours</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you exercise daily</legend>
+      <div class="flex-group">
+        <div>
+          <label for="exercise"><input type="radio" id="exercise-yes" name="exercise" value="yes" required />Yes</label>
+        </div>
+        <div>
+          <label for="exercise"><input type="radio" id="exercise-no" name="exercise" value="no" required />No</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What types of exercise do you do?</legend>
+      <div class="flex-group">
+        <div>
+          <label><input type="checkbox" name="activity" value="walking" />Walking</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="activity" value="gym" />Gym</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="activity" value="football" />Football</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="activity" value="yoga" />Yoga</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="activity" value="hockey" />Ice hockey</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="activity" value="other" />other</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>How would you rate your current stress level?</legend>
+      <div class="flex-group">
+        <div>
+         <label for="stress"></label>
+          <select id="stress" name="stress" required>
+            <option value="">Choose</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+      </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+     <legend>Do you have any tips for others ?</legend>
+     <div class="flex-group">
+      <div>
+        <label for="tips"></label>
+        <textarea id="tips" name="tips" rows="4" cols="40" placeholder="e.g. I was doing 30mins of yoga before bed..."></textarea>
+      </div>
+     </div>
+    </fieldset>
+
+    <div class="button-wrapper">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+  <section>
+    <footer>
+      <p>© Jani Määttänen. All Rights Reserved.</p>
+    </footer>
+  </section>
+  
+  </body>
+  </html>
+
